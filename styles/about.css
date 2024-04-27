@@ -1,0 +1,111 @@
+/*FONTES*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*MAIN*/
+* #menuBar{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background: #072d44;
+    height: 70px;
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 5px 6px rgba(0,0,0,0.5);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+h1{
+
+}
+h2{
+    font-family: 'calibri', sans-serif;
+
+}
+h3{ 
+    font-family: 'calibri', sans-serif;
+
+}
+div{
+
+}  
+a{
+    text-decoration: none;
+}
+
+footer{
+    margin-top: 25px;
+    background-color: #072d44;
+    padding: 10px;
+    color: #d0d7e1;
+    position: relative;
+    z-index: auto;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+/*RESPONSIVIDADE DA PAGE*/
+/*SmartPhones */
+@media only screen and (max-width: 600px) {
+
+}
+
+/*Tablets */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+
+}
+
+/*Notebooks*/
+@media only screen and (min-width: 1025px) and (max-width: 1600px) {
+
+}
+
+/*Smart Tvs*/
+@media only screen and (min-width: 1601px) {
+
+}
+
+/*MENU PRINCIPAL*/
+#logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: #d0d7e1;
+
+}
+#menuBar{
+    list-style: none;
+    box-sizing: border-box;
+    height: 7px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem; 
+}
+#menuBar .linkMenu{
+    display: block;
+    padding: .5rem;
+}
+.linkMenu{
+    color: #d0d7e1;
+    font-family: 'Open Sans', 'sans-serif';
+}
+.linkMenu:hover{
+    font-weight: bold;
+    background: #064469;
+    color: #9ccddb;
+    text-transform: uppercase;
+    border-radius: 5px;
+}

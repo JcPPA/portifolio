@@ -3,34 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio @JcPPA</title>
+    <link rel="icon" href="./img/iconTitle.png" type="image/x-icon">
+    
+    <title>
+        Portifólio .:@JcPPA:.
+    </title>
+
     <link rel="stylesheet" href="styles.css">
+        
+    <script src="script.js"></script>
+    
+    <!--Icon import-->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> 
+    <script nomodule src="https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 </head>
+
 <body>
+
     <header>
-        <h1>Portifólio</h1>
+        <a id="logo" id="JcPPALogo" href="#">JULIO'S PROFILE</a>
+        <nav id="navBar">
+            <ul id="menuBar">
+
+                <li>
+                    <a class="linkMenu" href="#">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a class="linkMenu" href="#">
+                        About Me
+                     </a>
+                </li>
+
+                <li>
+                     <a class="linkMenu" href="#">
+                         Skills
+                     </a>
+                </li>
+
+                <li>
+                    <a class="linkMenu" href="#">
+                         Contact
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+
+
     </header>
-    <nav>
-        <ul>
-            <li><a href="#">Currículo Acadêmico</a></li>
-            <li><a href="#">Atividade Profissional</a></li>
-            <li><a href="#">Projetos</a></li>
-            <li><a href="#">Contatos</a></li>
-        </ul>
-    </nav>
-    <div class="container">
-        <article>
-            <h2>Artigo 1</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non diam id eros tristique dapibus.</p>
-        </article>
-        <aside>
-            <h3>Barra Lateral</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non diam id eros tristique dapibus.</p>
-        </aside>
-    </div>
+
+    <aside>
+        <div class="profileCard">
+            <img id="profileImage" src="./img/minhaFoto.jpg">
+        </div>
+        <div class="borda-piscante"></div>
+        <div class="profileCard">
+            <p id="profileName">Júlio César Oliveira Bellini</p>
+            <span id="profileGradual">Licenciado, Bacharel & Tecnólogo</span>
+        </div>
+        <nav id="navBarSocial">
+            <ul class="navBarMenu">
+
+                <li class="navBarItem">
+                    <a href="https://www.instagram.com/dia_dn3rd/">
+                        <button>
+                            <img class="navBarImage" src="./img/instagram.png" alt="icon/social" target="_blank">
+                        </button>
+                    </a>
+                </li>
+
+                <li class="navBarItem">
+                    <a href="https://youtube.com/@dia_dn3rd?si=bCw9-L9yNTpZDa8r">
+                    <button>
+                        <img class="navBarImage" src="./img/youtube.png" alt="icon/social" target="_blank">
+                    </button>
+                        
+                    </a>
+                </li>
+
+                <li class="navBarItem">
+                    <a href="https://www.linkedin.com/in/jcppa/">
+                        <button>
+                            <img class="navBarImage" src="./img/linkedin.png" alt="icon/social" target="_blank">
+                        </button>
+                    </a>
+                </li>
+
+                <li class="navBarItem">
+                    <a href="https://github.com/JcPPA">
+                        <button>
+                            <img class="navBarImage" src="./img/github.png" alt="icon/social" target="_blank">
+                        </button>
+                    </a>
+                </li>
+
+                <li class="navBarItem">
+                    <a href="https://buscatextual.cnpq.br/buscatextual/visualizacv.do;jsessionid=69D5F0F0E5027F6515EA9DCA1CC8B5F2.buscatextual_0">
+                        <button>
+                            <img class="navBarImage" src="./img/lattes.png" alt="icon/social" target="_blank">
+                        </button>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+    </aside>
+
     <footer>
-        <p>&copy; At.2024 Portifólio Profissional. Todos os direitos reservados.</p>
+        <p>&copy; Última Atualização: 25/04/2024. Portifólio Profissional. Desafio Alura-Oracle. Todos os direitos reservados a Júlio César Oliveira Bellini.</p>
+        <section class="playerPage">
+
+        </section>
     </footer>
 </body>
+
 </html>
