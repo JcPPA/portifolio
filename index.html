@@ -24,7 +24,7 @@
 <body>
 
     <header>
-        <a id="logo" id="JcPPALogo" href="#">JULIO'S PROFILE</a>
+        <a id="logo" id="JcPPALogo" href="./index.html">JULIO'S PROFILE</a>
         <nav id="navBar">
             <ul id="menuBar">
 
@@ -47,7 +47,7 @@
                 </li>
 
                 <li>
-                    <a class="linkMenu" href="../portifolio/pages/contacts.html">
+                    <a id="botaoContact" class="linkMenu" href="../portifolio/pages/contacts.html">
                          Contact
                     </a>
                 </li>
@@ -60,7 +60,7 @@
 
     <aside>
         <div class="profileCard">
-            <img id="profileImage" src="./img/minhaFoto.jpg">
+            <img id="profileImage" src="./img/eu-direito.png">
         </div>
         <div class="borda-piscante"></div>
         <div class="profileCard">
@@ -71,42 +71,41 @@
             <ul class="navBarMenu">
 
                 <li class="navBarItem">
-                    <a href="https://www.instagram.com/dia_dn3rd/">
-                        <button>
-                            <img class="navBarImage" src="./img/instagram.png" alt="icon/social" target="_blank">
+                    <a href="https://www.instagram.com/dia_dn3rd/" target="_blank">
+                        <button onclick="abrirPagina1()">
+                            <img class="navBarImage" src="./img/instagram.png" alt="icon/social">
                         </button>
                     </a>
                 </li>
 
                 <li class="navBarItem">
-                    <a href="https://youtube.com/@dia_dn3rd?si=bCw9-L9yNTpZDa8r">
-                    <button>
-                        <img class="navBarImage" src="./img/youtube.png" alt="icon/social" target="_blank">
-                    </button>
-                        
-                    </a>
-                </li>
-
-                <li class="navBarItem">
-                    <a href="https://www.linkedin.com/in/jcppa/">
-                        <button>
-                            <img class="navBarImage" src="./img/linkedin.png" alt="icon/social" target="_blank">
+                    <a href="https://youtube.com/@dia_dn3rd?si=bCw9-L9yNTpZDa8r" target="_blank">
+                        <button onclick="abrirPagina2()">
+                            <img class="navBarImage" src="./img/youtube.png" alt="icon/social">
                         </button>
                     </a>
                 </li>
 
                 <li class="navBarItem">
-                    <a href="https://github.com/JcPPA">
-                        <button>
-                            <img class="navBarImage" src="./img/github.png" alt="icon/social" target="_blank">
+                    <a href="https://www.linkedin.com/in/jcppa/" target="_blank">
+                        <button onclick="abrirPagina3()">
+                            <img class="navBarImage" src="./img/linkedin.png" alt="icon/social">
                         </button>
                     </a>
                 </li>
 
                 <li class="navBarItem">
-                    <a href="https://buscatextual.cnpq.br/buscatextual/visualizacv.do;jsessionid=69D5F0F0E5027F6515EA9DCA1CC8B5F2.buscatextual_0">
-                        <button>
-                            <img class="navBarImage" src="./img/lattes.png" alt="icon/social" target="_blank">
+                    <a href="https://github.com/JcPPA" target="_blank">
+                        <button onclick="abrirPagina4()">
+                            <img class="navBarImage" src="./img/github.png" alt="icon/social" >
+                        </button>
+                    </a>
+                </li>
+
+                <li class="navBarItem">
+                    <a href="https://buscatextual.cnpq.br/buscatextual/visualizacv.do;jsessionid=69D5F0F0E5027F6515EA9DCA1CC8B5F2.buscatextual_0" target="_blank">
+                        <button onclick="abrirPagina5()">
+                            <img class="navBarImage" src="./img/lattes.png" alt="icon/social" >
                         </button>
                     </a>
                 </li>
@@ -121,6 +120,9 @@
         <section class="playerPage">
 
         </section>
+        <audio autoplay loop>
+            <source src="../portifolio/music/wanderingThePlains.mp3" type="audio/mpeg">
+        </audio>
     </footer>
 </body>
 

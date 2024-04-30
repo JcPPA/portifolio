@@ -11,7 +11,6 @@
 }
 
 body{
-    z-index: 0;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -22,7 +21,6 @@ body aside{
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 3;
     position: sticky;
 }
 header{
@@ -37,7 +35,7 @@ footer{
     background-color: black;
     color: rgb(255, 255, 255);
     padding: 25px;
-    margin-top: 10%;
+    margin-top: 20%;
     top: 0;
     bottom: 0; 
     left: 0;
@@ -59,7 +57,6 @@ h1{
 
 }
 h2{
-    font-family: 'calibri', sans-serif;
 
 }
 div{
@@ -69,10 +66,9 @@ a{
     text-decoration: none;
 }
 button{
-    border-radius: none;
     background: none;
-    list-style: none;
     border: none;
+    position: static;
 }
 
 
@@ -84,7 +80,7 @@ button{
         background-size: cover;
     }
     footer{
-        margin-top: 20%;
+        margin-top: 24%;
     }
     header{
         display: flex;
@@ -126,7 +122,7 @@ button{
     font-size: 1.5rem;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
-    color: #d0d7e1;
+    color: gold;
 
 }
 #menuBar{
@@ -142,22 +138,26 @@ button{
     padding: .5rem;
 }
 .linkMenu{
-    color: #d0d7e1;
+    color: rgb(255, 255, 255);
     font-family: 'Open Sans', 'sans-serif';
 }
 .linkMenu:hover{
     font-weight: bold;
-    background: #064469;
-    color: #9ccddb;
+    background: #444444;
+    color: gold;
     text-transform: uppercase;
     border-radius: 5px;
+}
+#botaoContact{
+    padding: 1px;
+    border-color: gold;
+    border-style: solid;
 }
 
 /*CARD PROFILE*/
 aside{
     background: gold;
-    background-size:contain;
-    padding: 5px 5px;
+    padding: 4px 4px;
     margin: 50px 50px;
     box-sizing: border-box;
     display: flex;
@@ -165,8 +165,8 @@ aside{
     align-items: center;
     gap: -1rem;
     width: 300px;
-    height: 400px;
-    left: 150px;
+    height: 320px;
+    left: 200px;
 }
     
 
@@ -174,16 +174,14 @@ aside{
     display: block;
     align-items: center;
     justify-content: center;
-    position: relative;
-    
-}
+}   
+
 
 #profileImage{
     width: 150px;
     border-radius: 50%;
     border-style: dotted solid;
-    position: relative;
-    display: inline-block;
+
 }
 .borda-piscante {
     position: absolute;
@@ -192,9 +190,9 @@ aside{
     right: -5px;
     bottom: -5px;
     animation: piscar 0.4s infinite alternate;
-    border: 5px solid red;
+    border: 6px solid red;
     border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(255, 215, 0, 0.5);
+    box-shadow: 1px 8px 20px rgba(255, 215, 0, 0.5);
 }
 .borda-piscante + #profileImage{
     border-color: red;
@@ -228,7 +226,6 @@ aside{
     align-items: center;
     margin: 25px;
     color: rgb(72, 72, 72);
-    
 }
 
 
@@ -248,11 +245,7 @@ aside{
     text-decoration: none;   
     cursor: pointer;
 }
-
 .navBarImage{
     width: 50px;
 }
 
-.navBarTitle{
-    font-family: 'Roboto', sans-serif;
-}

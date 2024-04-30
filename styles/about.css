@@ -1,111 +1,327 @@
 /*FONTES*/
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap'); 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 /*MAIN*/
-* #menuBar{
+*{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-header{
-    background: #072d44;
-    height: 70px;
-    padding: 1rem;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0px 5px 6px rgba(0,0,0,0.5);
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-image: url(../img/wallPaperMaxAbout.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header{
+    background-color: black;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Calibri', sans-serif;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+footer{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    padding: 25px;
+    margin-top: 25%;
+    top: 0;
+    bottom: 0; 
+    left: 0;
+    right: 0;
+}
+
+main{
+    height: 92vh;
+}
+
+#menuBar{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+} 
+#textResume{
+
+}
+
+#imgPerfil{
+    border-radius: 25%;
+    width: 300px;
+    margin-left: 2%;
+    margin-top: 5%;
 }
 h1{
-
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    padding: 15px 20px;
+    margin-top: 5%;
+    margin-left: 24%;
+    color: rgb(255, 255, 255);
+    background-color: cornflowerblue;
+    font-size: 25px;
+    font-family: 'Playfair Display', sans-serif;
 }
+aside{
+    text-align: justify;
+    border-color: rgb(117, 117, 117);
+    padding: 15px 25px;
+    margin-left: 25%;
+    margin-top: -17%;
+    margin-right: 30%;
+    background-color: antiquewhite;
+    border-radius: 25px;
+    border-color: cornflowerblue;
+    border-style: dotted;
+}
+
+
+
 h2{
-    font-family: 'calibri', sans-serif;
-
+    color:black;
+    font-family: 'Playfair Display', sans-serif;
 }
-h3{ 
-    font-family: 'calibri', sans-serif;
 
-}
-div{
-
-}  
 a{
     text-decoration: none;
 }
-
-footer{
-    margin-top: 25px;
-    background-color: #072d44;
-    padding: 10px;
-    color: #d0d7e1;
-    position: relative;
-    z-index: auto;
-    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.2);
+p{
+    font-family: 'Open Sans', sans-serif;
 
 }
+
 
 /*RESPONSIVIDADE DA PAGE*/
 /*SmartPhones */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
+  header{
+    display: block;
+    flex-direction: column;
+  } #textResume{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  } #imgPerfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 12%;
+  } h1{
+    margin-left: -1%;
+    margin-top: 80%;
+  } aside{
+    margin: 25px;
 
+  }#characteristics{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }#topico{
+    flex-direction: column;
+    display: flex;
+    
+  }.indiceHabilidade{
+    display: flex;
+    flex-direction: column;
+    padding: -100px;
+    margin: -50px;
+  }h1{
+    margin-top: 25%;
+  }
+  
 }
 
 /*Tablets */
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  #textResume{
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }#imgPerfil{
+    margin-left: 20%;
+    margin-bottom: 50px;
 
+  } h1{
+    margin-left: -1%;
+    margin-top: 50%;
+  } aside{
+    margin: 25px;
+    margin-top: -5%;
+
+  }
 }
 
 /*Notebooks*/
-@media only screen and (min-width: 1025px) and (max-width: 1600px) {
+@media only screen and (min-width: 769px) and (max-width: 1279px) {
 
 }
 
 /*Smart Tvs*/
-@media only screen and (min-width: 1601px) {
+@media only screen and (min-width: 1280px) {
 
 }
 
-/*MENU PRINCIPAL*/
+/*MENU PRINCIPAL HEADER*/
 #logo{
     font-size: 1.5rem;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
-    color: #d0d7e1;
+    color: gold;
 
 }
 #menuBar{
     list-style: none;
-    box-sizing: border-box;
-    height: 7px;
-    padding: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: .5rem; 
+    gap: .6rem; 
+
 }
 #menuBar .linkMenu{
     display: block;
     padding: .5rem;
 }
 .linkMenu{
-    color: #d0d7e1;
+    color: rgb(255, 255, 255);
     font-family: 'Open Sans', 'sans-serif';
 }
 .linkMenu:hover{
     font-weight: bold;
-    background: #064469;
-    color: #9ccddb;
+    background: #444444;
+    color: gold;
     text-transform: uppercase;
     border-radius: 5px;
+}
+#botaoContact{
+    padding: 1px;
+    border-color: gold;
+    border-style: solid;
+}
+
+/*Barras de Habilidades*/
+#characteristics{
+    margin-top: 2%;
+    margin-left: 33%;
+    margin-right: 33%;
+    flex-direction: column;
+    display: block;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
+
+}
+#topico{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    border-color: #000000;
+    font-size: 20px;
+    background-color: #ffffff;
+}
+
+.indiceHabilidade{
+  display: flex;
+
+  padding: 5px 25px;
+  justify-content: center;
+  background-color: #d3d3d3;
+  gap: 5px;
+  padding: 5px;
+
+}
+#rageTitle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 5px;
+}
+
+#historia{
+  padding: 5px 10px;
+  display: block;
+  justify-content: center;
+  flex-direction: column;
+  background-color:rgb(199, 109, 255);
+  
+}
+.buttonH{
+  background: none;
+  border: none;
+  padding: 2px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.rageValue1{
+  display: flex;
+  flex-direction: column;
+}
+
+#direito{
+  padding: 5px 10px;
+  display: block;
+  justify-content: center;
+  flex-direction: column;
+  background-color:rgb(252, 255, 85);
+
+}
+.buttonD{
+  background: none;
+  border: none;
+  padding: 2px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.rageValue2{
+  display: flex;
+  flex-direction: column;
+
+}
+
+#cienciasDeDados{
+  padding: 5px 10px;
+  display: block;
+  justify-content: center;
+  flex-direction: column;
+  background-color:rgb(86, 226, 43);
+
+}
+.buttonCD{
+  background: none;
+  border: none;
+  padding: 2px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.rageValue3{
+  display: flex;
+  flex-direction: column;
+}
+
+#direito,
+#cienciasDeDados {
+  display: ;
 }
