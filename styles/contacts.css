@@ -79,6 +79,11 @@ button{
         display: block;
         margin-right: 5%;
     }
+    header{
+        display: block;
+        padding-bottom: 20px;
+        align-items: center;
+    }
 
 
 }
