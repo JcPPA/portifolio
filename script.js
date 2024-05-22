@@ -9,7 +9,7 @@ function moveImage() {
     const image = document.getElementById('bowser');
     let position = 0;
     const interval = 10;
-    const speed = 1;
+    const speed = 5;
 
     function moveRight() {
         position += speed;
@@ -23,28 +23,3 @@ function moveImage() {
 }
 
 document.addEventListener('DOMContentLoaded', moveImage);
-
-function moveImages() {
-    const images = document.getElementById('koopa');
-    const imageA = document.getElementById('koopaA');
-    const imageB = document.getElementById('koopaB');
-
-
-    let position = 5;
-    const interval = 10;
-    const speed = 1;
-    function moveLeft() {
-        position += speed;
-        if (position > window.innerHeight) {
-            position = -images.innerHeight;
-            position = -imageA.innerHeight;
-            position = -imageB.innerHeight;
-        }
-        images.style.left = position + 'px';
-        imageA.style.left = position + 'px';
-        imageB.style.left = position + 'px';
-    }
-
-    setInterval(moveLeft, interval);
-}
-document.addEventListener('DOMContentLoaded', moveImages);

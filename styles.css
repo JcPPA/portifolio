@@ -30,7 +30,7 @@ body{
     box-sizing: border-box;
     background: url('../portifolio/img/wallPaper01.png') no-repeat center center;
     background-size: cover;
-    animation: moveBackground 9s linear infinite;
+    animation: moveBackground 15s linear infinite;
 }
 
 @keyframes moveBackground {
@@ -121,7 +121,7 @@ button{
 /*Tablets */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
     body{
-        background: url('../portifolio/img/wallPaper02.jpg') no-repeat center;
+        background: url('../portifolio/img/wallPaper01-B.jpg') no-repeat center;
         background-size: cover;
     }
     header{
@@ -311,7 +311,7 @@ aside + aside{
 }
 #koopa, #koopaA, #koopaB{
     position: absolute;
-    width: 150px;
+    width: 190px;
     height: auto;
 }
 #koopaA{
