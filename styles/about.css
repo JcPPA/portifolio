@@ -175,39 +175,57 @@ p{
 
 /*MENU PRINCIPAL HEADER*/
 #logo{
-    font-size: 1.5rem;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-    color: gold;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  color: gold;
+}
+/*Animação do #logo*/
+#logo {
+  animation: piscar 0.4s infinite alternate;
+  
+}
+#logo + #logo{
+  color: red;
+}
+@keyframes piscar {
+  0% {
+      color: red;
+  }
+  100% {
+      color: gold;
+  }
 
 }
+
 #menuBar{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: .6rem; 
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .6rem; 
 
 }
 #menuBar .linkMenu{
-    display: block;
-    padding: .5rem;
+  display: block;
+  padding: .5rem;
 }
 .linkMenu{
-    color: rgb(255, 255, 255);
-    font-family: 'Open Sans', 'sans-serif';
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  font-family: 'Open Sans', 'sans-serif';
 }
 .linkMenu:hover{
-    font-weight: bold;
-    background: #444444;
-    color: gold;
-    text-transform: uppercase;
-    border-radius: 5px;
+  font-weight: bold;
+  background: #444444;
+  color: gold;
+  text-transform: uppercase;
+  border-radius: 5px;
 }
 #botaoContact{
-    padding: 1px;
-    border-color: gold;
-    border-style: solid;
+  padding: 1px;
+  border-color: gold;
+  border-style: solid;
 }
 
 /*Barras de Habilidades*/

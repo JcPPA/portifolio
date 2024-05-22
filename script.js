@@ -1,18 +1,50 @@
-/* PAGE INDEX.HTML */
-/*Funcionamento das Redes Sociais*/
+//Som dos botões das redes sociais
+function playSound() {
+    var audio = new Audio('./music/breakbox.MP3');
+    audio.play();
+};
 
-function abrirPagina1() {
-    window.open("https://www.instagram.com/dia_dn3rd/", "_blank");
-  }
-function abrirPagina2() {
-    window.open("https://youtube.com/@dia_dn3rd?si=bCw9-L9yNTpZDa8r", "_blank");
-  }
-function abrirPagina3() {
-    window.open("https://www.linkedin.com/in/jcppa/", "_blank");
-  }
-function abrirPagina4() {
-    window.open("https://github.com/JcPPA", "_blank");
-  }
-function abrirPagina5() {
-    window.open("https://buscatextual.cnpq.br/buscatextual/visualizacv.do;jsessionid=69D5F0F0E5027F6515EA9DCA1CC8B5F2.buscatextual_0", "_blank");
-  }
+//personsagens em movimento usando GIFs
+function moveImage() {
+    const image = document.getElementById('bowser');
+    let position = 0;
+    const interval = 10;
+    const speed = 1;
+
+    function moveRight() {
+        position += speed;
+        if (position > window.innerWidth) {
+            position = -image.innerWidth;
+        }
+        image.style.right = position + 'px';
+    }
+
+    setInterval(moveRight, interval);
+}
+
+document.addEventListener('DOMContentLoaded', moveImage);
+
+function moveImages() {
+    const images = document.getElementById('koopa');
+    const imageA = document.getElementById('koopaA');
+    const imageB = document.getElementById('koopaB');
+
+
+    let position = 5;
+    const interval = 10;
+    const speed = 1;
+    function moveLeft() {
+        position += speed;
+        if (position > window.innerHeight) {
+            position = -images.innerHeight;
+            position = -imageA.innerHeight;
+            position = -imageB.innerHeight;
+        }
+        images.style.left = position + 'px';
+        imageA.style.left = position + 'px';
+        imageB.style.left = position + 'px';
+    }
+
+    setInterval(moveLeft, interval);
+}
+document.addEventListener('DOMContentLoaded', moveImages);

@@ -4,6 +4,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+@font-face {
+    font-family: 'Super-Mario-World';
+    src: url('./font/Super-Mario-World.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SuperMario256';
+    src: url('./font/SuperMario256.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 /*MAIN*/
 *{
     margin: 0;
@@ -14,8 +28,18 @@ body{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    background: url('../portifolio/img/WallPaper.gif') no-repeat center center;
+    background: url('../portifolio/img/wallPaper01.png') no-repeat center center;
     background-size: cover;
+    animation: moveBackground 9s linear infinite;
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
 }
 body aside{
     display: flex;
@@ -24,18 +48,22 @@ body aside{
     position: sticky;
 }
 header{
-    background-color: black;
-    height: 8vh;
+    background-color: rgb(0, 0, 0);
+    height: 10vh;
     display: flex;
-    justify-content: space-around;
+    padding: 15px;
+    justify-content: space-between;
     align-items: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Calibri', sans-serif;
+    box-shadow: 5px 1px 25px rgba(0, 0, 0, 0.5);
 }
 footer{
-    background-color: black;
-    color: rgb(255, 255, 255);
+    background-color: #c84c0c;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.5);
     padding: 25px;
-    margin-top: 20%;
+    margin-top: 50%;
     top: 0;
     bottom: 0; 
     left: 0;
@@ -52,16 +80,6 @@ main{
     padding: 0px;
     box-sizing: border-box;
 } 
-
-h1{
-
-}
-h2{
-
-}
-div{
-
-}  
 a{
     text-decoration: none;
 }
@@ -76,20 +94,25 @@ button{
 /*SmartPhones */
 @media only screen and (max-width: 600px) {
     body{
-        background: url('../portifolio/img/WallPaperVertical.gif') no-repeat center center;
+        background: url('../portifolio/img/wallPaper01-A.jpg') no-repeat;
         background-size: cover;
     }
     footer{
-        margin-top: 24%;
+        margin-top: 200%;
+        background-color: #5ca949;
     }
     header{
         display: flex;
         flex-direction: column;
-        padding-top: 10%;
+        padding-top: 5%;
         padding-bottom: 5%;
     }
-    aside{
-        background-color:white ;
+    #superMario{
+        padding-top: 60px;
+        margin-top: 2000px;
+        position: absolute;
+        width: 250px;
+        height: auto;
     }
 
 
@@ -98,11 +121,22 @@ button{
 /*Tablets */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
     body{
-        background: url('../portifolio/img/WallPaperTablet.gif') no-repeat center center;
+        background: url('../portifolio/img/wallPaper02.jpg') no-repeat center;
         background-size: cover;
     }
-    aside{
-        background-color: rgb(133, 133, 133) ;
+    header{
+        align-items: center;
+        margin-bottom: 10%;
+
+    }
+    footer{
+        margin-top: 75%;
+        background-color: #9e4f0c;
+
+    }
+    #superMario{
+        position: absolute;
+        bottom: -485px;
     }
 
 }
@@ -123,8 +157,25 @@ button{
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
     color: gold;
+}
+/*Animação do #logo*/
+#logo {
+    animation: piscar 0.4s infinite alternate;
+    
+}
+#logo + #logo{
+    color: red;
+}
+@keyframes piscar {
+    0% {
+        color: red;
+    }
+    100% {
+        color: gold;
+    }
 
 }
+
 #menuBar{
     list-style: none;
     display: flex;
@@ -138,6 +189,7 @@ button{
     padding: .5rem;
 }
 .linkMenu{
+    font-size: 16px;
     color: rgb(255, 255, 255);
     font-family: 'Open Sans', 'sans-serif';
 }
@@ -157,48 +209,26 @@ button{
 /*CARD PROFILE*/
 aside{
     background: gold;
+    border-color: #000;
+    border-style: solid;
     padding: 4px 4px;
-    margin: 50px 50px;
+    margin: 50px 20px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: -1rem;
-    width: 300px;
-    height: 320px;
-    left: 200px;
+    width: 350px;
+
 }
+
+aside {
+    animation: piscada 0.4s infinite alternate;
     
-
-.profileCard{
-    display: block;
-    align-items: center;
-    justify-content: center;
-}   
-
-
-#profileImage{
-    width: 150px;
-    border-radius: 50%;
-    border-style: dotted solid;
-
 }
-.borda-piscante {
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    right: -5px;
-    bottom: -5px;
-    animation: piscar 0.4s infinite alternate;
-    border: 6px solid red;
-    border-radius: 10px;
-    box-shadow: 1px 8px 20px rgba(255, 215, 0, 0.5);
-}
-.borda-piscante + #profileImage{
+aside + aside{
     border-color: red;
 }
-
-@keyframes piscar {
+@keyframes piscada {
     0% {
         border-color: red;
     }
@@ -207,31 +237,48 @@ aside{
     }
 
 }
-
-#profileName{
-    color: rgb(0, 0, 0);
-    font-family: 'Dosis', sans-serif;
-    font-weight: bold;
-    font-size: 25px;
-
-}
-#profileGradual{
-    color: black;
-    font-family: 'Roboto', sans-serif;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: bold;
-}
-#profileGradual{
+.profileCard{
+    gap: 25px;
+    display: block;
     align-items: center;
-    margin: 25px;
-    color: rgb(72, 72, 72);
+    justify-content: center;
+}
+
+#profileImage{
+    border-radius: 200px;
+    gap: 25px;
+    width: 150px;
+    border-radius: 50%;
+    border-style: dotted solid;
+}
+#profileName{
+    color: rgb(255, 0, 0);
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    font-family: 'SuperMario256', sans-serif;
+    text-shadow: 
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px  1px 0 #000,
+        1px  1px 0 #000;
+    padding: 10px;
+    text-align: center;
+}
+#profileGradual{
+    color: rgb(0, 81, 255);
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: 'SuperMario256', sans-serif;
+    text-align: justify;
+    margin-left: 45px;
+    align-items: center;
+    justify-items: center;
 }
 
 
 /*Barra do Icones*/
 #navBarSocial{
-    top: -100px;
+    top: -50px;
     width: 50px 50px;
     margin: 25px 70px;
 
@@ -244,8 +291,40 @@ aside{
     list-style: none;
     text-decoration: none;   
     cursor: pointer;
+
 }
 .navBarImage{
     width: 50px;
 }
 
+/*personagens em movimento uso de GIFs*/
+#container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#bowser {
+    position: absolute;
+    width: 250px;
+    height: auto;
+}
+#koopa, #koopaA, #koopaB{
+    position: absolute;
+    width: 150px;
+    height: auto;
+}
+#koopaA{
+    gap: 10px;
+    padding-left: 100px;
+}
+#koopaB{
+    gap: 10px;
+    padding-left: 200px;
+}
+#superMario{
+    margin-top: 420px;
+    position: absolute;
+    width: 250px;
+    height: auto;
+}
