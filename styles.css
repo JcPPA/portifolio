@@ -1,330 +1,343 @@
 /*FONTES*/
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap'); 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+@import url('CAMINHO DA FONTE');
 @font-face {
-    font-family: 'Super-Mario-World';
-    src: url('./font/Super-Mario-World.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'SuperMario256';
-    src: url('./font/SuperMario256.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'NOME-DA-FONTE';
+  src: url('../font/AQUIVO-DA-FONTE.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 
-/*MAIN*/
+/*CONFIGURAÇÕES DA PAGINA*/
 *{
-    margin: 0;
-    padding: 0;
-}
-
-body{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    background: url('../portifolio/img/wallPaper01.png') no-repeat center center;
-    background-size: cover;
-    animation: moveBackground 15s linear infinite;
-}
-
-@keyframes moveBackground {
-    0% {
-        background-position: 0 0;
-    }
-    100% {
-        background-position: 100% 0;
-    }
-}
-body aside{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: sticky;
-}
-header{
-    background-color: rgb(0, 0, 0);
-    height: 10vh;
-    display: flex;
-    padding: 15px;
-    justify-content: space-between;
-    align-items: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Calibri', sans-serif;
-    box-shadow: 5px 1px 25px rgba(0, 0, 0, 0.5);
-}
-footer{
-    background-color: #c84c0c;
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.5);
-    padding: 25px;
-    margin-top: 50%;
-    top: 0;
-    bottom: 0; 
-    left: 0;
-    right: 0;
-    z-index: 1;
+  margin: 0;
+  padding: 0;
 }
 
 main{
-    height: 92vh;
+  height: 92vh;
 }
 
-#menuBar{
-    margin: 0px;
-    padding: 0px;
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #5b5b58;
     box-sizing: border-box;
-} 
+
+}
 a{
+    list-style: none;
     text-decoration: none;
 }
-button{
-    background: none;
-    border: none;
-    position: static;
+
+header{
+  background-color: black;
+  height: 8vh;
+  padding: 1.2rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Calibri', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+  
+footer{
+  background-color: black;
+  color: rgb(255, 255, 255);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  padding: 40px 0;
+  margin-top: 25%;
+  top: 0;
+  bottom: 0; 
+  left: 0;
+  right: 0;
+  height: 8vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Calibri', sans-serif;
+  display: flex;
+  justify-content: " ";
+  align-items: center;
 }
 
 
-/*RESPONSIVIDADE DA PAGE*/
-/*SmartPhones */
-@media only screen and (max-width: 600px) {
-    body{
-        background: url('../portifolio/img/wallPaper01-A.jpg') no-repeat;
-        background-size: cover;
+/*ESTRUTURA DE RESPONSIVIDADE*/
+/* Smartwatches em modo retrato */
+@media only screen and (max-width: 320px) and (orientation: portrait) {
+    body {
+        font-size: 10px;
+        background-color: #5b5b58;
     }
+
     footer{
-        margin-top: 200%;
-        background-color: #5ca949;
-    }
-    header{
-        display: flex;
-        flex-direction: column;
-        padding-top: 5%;
-        padding-bottom: 5%;
-    }
-    #superMario{
-        padding-top: 60px;
-        margin-top: 2000px;
-        position: absolute;
-        width: 250px;
-        height: auto;
-    }
 
-
+    }
 }
 
-/*Tablets */
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-    body{
-        background: url('../portifolio/img/wallPaper01-B.jpg') no-repeat center;
-        background-size: cover;
+/* Smartphones em modo retrato */
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+    body {
+        background-color: #5b5b58;
     }
-    header{
-        align-items: center;
-        margin-bottom: 10%;
 
-    }
     footer{
-        margin-top: 75%;
-        background-color: #9e4f0c;
 
-    }
-    #superMario{
-        position: absolute;
-        bottom: -485px;
-    }
-
-}
-
-/*Notebooks*/
-@media only screen and (min-width: 1025px) and (max-width: 1600px) {
-
-}
-
-/*Smart Tvs*/
-@media only screen and (min-width: 1601px) {
-
-}
-
-/*MENU PRINCIPAL HEADER*/
-#logo{
-    font-size: 1.5rem;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-    color: gold;
-}
-/*Animação do #logo*/
-#logo {
-    animation: piscar 0.4s infinite alternate;
     
-}
-#logo + #logo{
-    color: red;
-}
-@keyframes piscar {
-    0% {
-        color: red;
     }
-    100% {
-        color: gold;
-    }
-
 }
 
-#menuBar{
-    list-style: none;
+/* Smartphones em modo paisagem */
+@media only screen and (max-width: 600px) and (orientation: landscape) {
+    body {
+        background-color: #5b5b58;
+    }
+
+    footer{
+
+    
+    }
+    .card-containe{
+        display: collum;
+    }
+}
+
+/* Tablets em modo retrato */
+@media only screen and (min-width: 601px) and (max-width: 900px) and (orientation: portrait) {
+    body {
+        background-color: #5b5b58;
+    }
+
+    footer{
+
+    
+    }
+}
+
+/* Tablets em modo paisagem */
+@media only screen and (min-width: 601px) and (max-width: 900px) and (orientation: landscape) {
+    body {
+        background-color: #5b5b58;
+    }
+
+    footer{
+
+    
+    }
+}
+
+/* Notebooks */
+@media only screen and (min-width: 901px) and (max-width: 1440px) and (orientation: landscape) {
+    body {
+        background-color: #5b5b58;
+    }
+
+    footer{
+
+    
+    }
+}
+
+/* Smart TVs */
+@media only screen and (min-width: 1441px) {
+    body {
+        background-color: #5b5b58;
+    }
+
+    footer{
+    
+    
+    }
+}
+
+
+/*HEADER CONFIG*/
+/*Menu Principal Horizontal*/
+.navbar {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    gap: .6rem; 
+    align-items: center;
+    padding: 1rem 2rem;
+}
 
-}
-#menuBar .linkMenu{
-    display: block;
-    padding: .5rem;
-}
-.linkMenu{
-    font-size: 16px;
-    color: rgb(255, 255, 255);
-    font-family: 'Open Sans', 'sans-serif';
-}
-.linkMenu:hover{
+.logo {
+    font-size: 2.5rem;
     font-weight: bold;
-    background: #444444;
-    color: gold;
-    text-transform: uppercase;
-    border-radius: 5px;
-}
-#botaoContact{
-    padding: 1px;
-    border-color: gold;
-    border-style: solid;
 }
 
-/*CARD PROFILE*/
-aside{
-    background: gold;
-    border-color: #000;
-    border-style: solid;
-    padding: 4px 4px;
-    margin: 50px 20px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 350px;
-
-}
-
-aside {
-    animation: piscada 0.4s infinite alternate;
-    
-}
-aside + aside{
-    border-color: red;
-}
-@keyframes piscada {
-    0% {
-        border-color: red;
-    }
-    100% {
-        border-color: gold;
-    }
-
-}
-.profileCard{
-    gap: 25px;
-    display: block;
-    align-items: center;
-    justify-content: center;
-}
-
-#profileImage{
-    border-radius: 200px;
-    gap: 25px;
-    width: 150px;
-    border-radius: 50%;
-    border-style: dotted solid;
-}
-#profileName{
-    color: rgb(255, 0, 0);
-    font-size: 1.8em;
-    margin-bottom: 10px;
-    font-family: 'SuperMario256', sans-serif;
-    text-shadow: 
-        -1px -1px 0 #000,  
-        1px -1px 0 #000,
-        -1px  1px 0 #000,
-        1px  1px 0 #000;
-    padding: 10px;
-    text-align: center;
-}
-#profileGradual{
-    color: rgb(0, 81, 255);
-    text-transform: uppercase;
-    font-size: 13px;
-    font-family: 'SuperMario256', sans-serif;
-    text-align: justify;
-    margin-left: 45px;
-    align-items: center;
-    justify-items: center;
-}
-
-
-/*Barra do Icones*/
-#navBarSocial{
-    top: -50px;
-    width: 50px 50px;
-    margin: 25px 70px;
-
-}
-.navBarMenu{
-    display: flex;
-    align-items: center;
-}
-.navBarItem{
+.nav-links {
     list-style: none;
-    text-decoration: none;   
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #12f319;
+    text-transform: uppercase;
+}
+
+.burger {
+    display: none;
     cursor: pointer;
-
-}
-.navBarImage{
-    width: 50px;
 }
 
-/*personagens em movimento uso de GIFs*/
-#container {
-    position: relative;
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background-color: #333;
+    }
+
+    .nav-links li {
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+    .burger {
+        display: block;
+    }
+}
+
+.nav-active {
+    display: flex !important; /*muito importante verificar se está responsivo*/
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+/*BODY CONFIG*/
+h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+h1:hover {
+    color: #12f319;
+}
+h2{}
+h3{}
+aside{}
+article{}
+section{}
+
+
+/*CARDS PROFISSÕES*/
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+.card {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.5); /* Cor de fundo com transparência */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card hr {
+    margin: 10px 0;
+}
+
+.card p {
+    margin: 5px 0;
+    display: none;
+}
+
+.card button {
+    float: left;
+}
+
+.card.expanded {
     width: 100%;
-    height: 100%;
 }
 
-#bowser {
-    position: absolute;
-    width: 250px;
-    height: auto;
+.card.expanded h3 {
+    font-size: 24px;
 }
-#koopa, #koopaA, #koopaB{
-    position: absolute;
-    width: 190px;
-    height: auto;
+
+.card.expanded p {
+    display: block;
+
 }
-#koopaA{
-    gap: 10px;
-    padding-left: 100px;
+
+.card.expanded button {
+    float: none;
 }
-#koopaB{
-    gap: 10px;
-    padding-left: 200px;
+
+.footer {
+    clear: both;
 }
-#superMario{
-    margin-top: 420px;
-    position: absolute;
-    width: 250px;
-    height: auto;
+
+
+/*FOOTER CONFIG*/
+.footer-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.footer-logo {
+	margin-bottom: 20px;
+}
+.footer-nav, .footer-social, .footer-contact {
+	margin-bottom: 20px;
+}
+.footer-nav a, .footer-social a {
+	color: #fff;
+	text-decoration: none;
+	margin: 0 10px;
+}
+.footer-nav a:hover, .footer-social a:hover {
+	text-decoration: underline;
+}
+.footer-social a {
+	font-size: 1.5em;
+}
+.footer-contact p {
+	margin: 5px 0;
+}
+.footer-copy {
+	margin-top: 20px;
+	font-size: 0.9em;
 }

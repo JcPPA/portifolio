@@ -1,25 +1,41 @@
-//Som dos botões das redes sociais
-function playSound() {
-    var audio = new Audio('./music/breakbox.MP3');
-    audio.play();
-};
+// JavaScript
+document.addEventListener('DOMContentLoaded', function() {
+    const cards = document.querySelectorAll('.card');
 
-//personsagens em movimento usando GIFs
-function moveImage() {
-    const image = document.getElementById('bowser');
-    let position = 0;
-    const interval = 10;
-    const speed = 5;
+    cards.forEach(card => {
+        card.addEventListener('click', function(event) {
+            if (!event.target.classList.contains('learn-more')) {
+                return;
+            }
+            
+            const isExpanded = this.classList.contains('expanded');
 
-    function moveRight() {
-        position += speed;
-        if (position > window.innerWidth) {
-            position = -image.innerWidth;
-        }
-        image.style.right = position + 'px';
-    }
-
-    setInterval(moveRight, interval);
-}
-
-document.addEventListener('DOMContentLoaded', moveImage);
+            if (!isExpanded) {
+                cards.forEach(c => {
+                    c.classList.remove('expanded');
+                });
+                this.classList.add('expanded');
+                this.style.backgroundColor = 'black';
+                this.style.color = 'white';
+                const h3 = this.querySelector('h3');
+                h3.style.color = 'green';
+                h3.style.textTransform = 'uppercase';
+                const paragraphs = this.querySelectorAll('p');
+                paragraphs.forEach(p => {
+                    p.style.textAlign = 'justify';
+                });
+            } else {
+                this.classList.remove('expanded');
+                this.style.backgroundColor = '';
+                this.style.color = '';
+                const h3 = this.querySelector('h3');
+                h3.style.color = '';
+                h3.style.textTransform = '';
+                const paragraphs = this.querySelectorAll('p');
+                paragraphs.forEach(p => {
+                    p.style.textAlign = '';
+                });
+            }
+        });
+    });
+});

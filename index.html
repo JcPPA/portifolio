@@ -2,129 +2,144 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./img/iconTitle.png" type="image/x-icon">
     
-    <title>
-        Portifólio .:@JcPPA:.
-    </title>
-
+    <!--CSS Import-->
     <link rel="stylesheet" href="styles.css">
-        
-    <script src="script.js"></script>
-    
-    <!--Icon import-->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
+
+    <!--JavaScript Import-->
+    <script src="script.js"></script>
+
+
+    <!--ICON AND FONT import-->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> 
     <script nomodule src="https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    
+    <!--Page Shape-->
+    <link rel="icon" href="./img/iconTitle.png" type="image/x-icon">
+    <title>
+        Portifólio :@Jc_PPA:
+    </title>
 </head>
 
 <body>
 
     <header>
-        <a id="logo" id="JcPPALogo" href="./index.html">JULIO'S PROFILE</a>
-        <nav id="navBar">
-            <ul id="menuBar">
-
-                <li>
-                    <a class="linkMenu" href="./index.html">
-                        Home
-                    </a>
-                </li>
-
-                <li>
-                    <a class="linkMenu" href="../portifolio/pages/about.html">
-                        About Me
-                    </a>
-                </li>
-
-                <li>
-                    <a class="linkMenu" href="../portifolio/pages/skills.html">
-                        Skills
-                    </a>
-                </li>
-
-                <li>
-                    <a id="botaoContact" class="linkMenu" href="../portifolio/pages/contacts.html">
-                        Contact
-                    </a>
-                </li>
-                
+        <a id="logo" id="JcPPALogo" href="./index.html"><h1>JULIO'S PROFILE</h1></a>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#sobre">About</a></li>
+                <li><a href="#projetos">Projects</a></li>
+                <li><a href="#habilidades">Skills</a></li>
+                <li><a href="#contato">Contact</a></li>
             </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </nav>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+            const burger = document.querySelector('.burger');
+            const nav = document.querySelector('.nav-links');
 
+            burger.addEventListener('click', () => {
+            nav.classList.toggle('nav-active');
 
+            burger.classList.toggle('toggle');
+            });
+        });
+        </script>
     </header>
+    <h2><strong>Formação Acadêmica</strong></h2>
+    <aside class="card-container">
 
-    <aside>
-        <div class="profileCard">
-            <img id="profileImage" src="./img/eu-direito.png">
+        <div class="card">
+            <h3>História</h3>
+            <hr>
+            <p>Resumo:</p>
+            <p>Titulação: Licenciatura.</p>
+            <p>"Sou graduado em Licenciatura Plena em História pela Universidade Estadual de Goiás (UEG-UniJussara), com ampla experiência em pesquisa científica e extensão acadêmica na área de História Contemporânea. 
+                Minhas áreas de estudo incluem História da Filosofia, com ênfase nos desenvolvimentos metodológicos e teóricos em hermenêutica filosófica na linha de pensamento de Hans-Georg Gadamer, e na arqueogenealogia do poder na linha de Michel Foucault."</p>
+            <hr>
+            <button class="learn-more">Saiba mais</button>
         </div>
-        <div class="profileCard">
-            <p id="profileName">Julio Cesar Oliveira Bellini</p>
-            <span id="profileGradual">Licenciado, Bacharel & Tecnologo</span>
+
+        <div class="card">
+            <h3>Direito</h3>
+            <hr>
+            <p>Resumo:</p>
+            <p>Titulação: Bacharel.</p>
+            <p>"Sou bacharel em Direito pela Universidade Federal de Goiás (UFG-UniJataí), atualmente denominada Universidade Federal de Jataí (UFJ), com especialização em Direito Digital e Proteção de Dados pela UniMais, em parceria com a GranFaculdades. Minha experiência profissional se concentra principalmente nas áreas de Direito Tributário e Direito Digital, embora também tenha adquirido conhecimentos em Direito Civil, Trabalhista e Registral ao longo de minha trajetória no mercado de trabalho."</p>
+            <hr>
+            <button class="learn-more">Saiba mais</button>
         </div>
-        <nav id="navBarSocial">
-            <ul class="navBarMenu">
-                <li class="navBarItem">
-                    <button id="soundButton" onclick="playSound()">
-                        <a href="https://www.instagram.com/jc_ppa/" target="_blank">
-                            <img class="navBarImage" src="./img/instagram.png" alt="icon/social">
-                        </a>
-                    </button>
-                </li>
 
-                <li class="navBarItem">
-                    <button id="soundButton" onclick="playSound()">
-                        <a href="https://youtube.com/@dia_dn3rd?si=bCw9-L9yNTpZDa8r" target="_blank">
-                            <img class="navBarImage" src="./img/youtube.png" alt="icon/social">
-                        </a>
-                    </button>
-                </li>
+        <div class="card">
+            <h3>Ciência de Dados</h3>
+            <hr>
+            <p>Resumo:</p>
+            <p>Titulação: Tecnólogo.</p>
+            <p>"Sou graduando em Tecnólogo em Ciências de Dados pela GranFaculdades, além de atuar como programador Front-End de forma amadora. No campo da tecnologia, obtive especialização em Segurança da Informação pela UniMais, em parceria com a GranFaculdades.
+                Meu foco na área de dados é conciliar os conhecimentos adquiridos em minhas especializações, tanto jurídica quanto técnica, para desenvolver uma abordagem de trabalho e programação concisa voltada para a IA Security."</p>
+            <hr>
+            <button class="learn-more">Saiba mais</button>
+        </div>
 
-                <li class="navBarItem">
-                    <button id="soundButton" onclick="playSound()">
-                        <a href="https://www.linkedin.com/in/jcppa/" target="_blank">
-                            <img class="navBarImage" src="./img/linkedin.png" alt="icon/social">
-                        </a>
-                    </button>
-                </li>
+        <div class="card">
+            <h3>Direito Digital e Proteção de Dados</h3>
+            <hr>
+            <p>Resumo:</p>
+            <p>Titulação: Especialista.</p>
+            <p>Resumo linha 1</p>
+            <p>Resumo linha 2</p>
+            <hr>
+            <button class="learn-more">Saiba mais</button>
+        </div>
 
-                <li class="navBarItem"></li>
-                    <button id="soundButton" onclick="playSound()">
-                        <a href="https://github.com/JcPPA" target="_blank">
-                            <img class="navBarImage" src="./img/github.png" alt="icon/social" >
-                        </a>
-                    </button>
-                </li>
+        <div class="card">
+            <h3>Segurança da Informação</h3>
+            <br>
+            <hr>
+            <p>Resumo:</p>
+            <p>Titulação: Especialista.</p>
+            <p><img src="./" ></p>
+            <hr>
+            <button class="learn-more">Saiba mais</button>
+        </div>
 
-                <li class="navBarItem">
-                    <button id="soundButton" onclick="playSound()">
-                        <a href="https://buscatextual.cnpq.br/buscatextual/visualizacv.do;jsessionid=69D5F0F0E5027F6515EA9DCA1CC8B5F2.buscatextual_0" target="_blank">
-                            <img class="navBarImage" src="./img/lattes.png" alt="icon/social" >
-                        </a>
-                    </button>
-                </li>
-            </ul>
-        </nav>
+        <div class="card">
+            <h3>Data Science & IA</h3>
+            <br>
+            <hr>
+            <p>Resumo:</p>
+            <p>Titulação: MBA</p>
+            <p>Resumo linha 1</p>
+            <hr>
+            <button class="learn-more">Próxima Etapa</button>
+        </div>
+        
     </aside>
-    <div id="container">
-        <img id="bowser" src="./object/bowserFly.gif" alt="gif/animated">
-        <img id="superMario" src="./object/marioYoshiSuperStar.gif" alt="gif/animated">
-    </div>
-
+    <hr>
 
     <footer>
-        <p><strong>&copy; Última Atualização: 21/05/2024</strong>. Portifólio Profissional. <span>Desafio Alura-Oracle</span>. Todos os direitos reservados a <a>Júlio César Oliveira Bellini</a>.</p>
-        <section class="playerPage">
-
-        </section>
-        <audio autoplay loop>
-            <source src="../portifolio/music/wanderingThePlains.mp3" type="audio/mp3">
-        </audio>
+        <div>
+            &copy; 2024 Júlio César Oliveira Bellini. Todos os direitos reservados.
+        </div>
     </footer>
+    <script src=".//app/mainOn.js"></script>
+
 </body>
 
 </html>

@@ -62,9 +62,6 @@ main{
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-} 
-#textResume{
-
 }
 
 #imgPerfil{
@@ -352,4 +349,4 @@ p{
 .rageValue3{
   display: flex;
   flex-direction: column;
-};
+}
